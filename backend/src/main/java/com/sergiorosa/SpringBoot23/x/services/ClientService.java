@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.sergiorosa.SpringBoot23.x.dto.ClientDTO;
 import com.sergiorosa.SpringBoot23.x.entities.Client;
 import com.sergiorosa.SpringBoot23.x.repositories.ClientRepository;
+import com.sergiorosa.SpringBoot23.x.services.exceptions.EntityNotFoundException;
 
 @Service
 public class ClientService {
@@ -29,7 +30,7 @@ public class ClientService {
 	@Transactional(readOnly = true)
 	public ClientDTO findById(Long id) {
 		Optional<Client> obj = repository.findById(id);
-		Client entity =  obj.get();
+		Client entity =  obj.orElseThrow(() -> new EntityNotFoundException("Entity not found"));
 		return new ClientDTO(entity);
 	
 	}
