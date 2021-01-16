@@ -26,6 +26,8 @@ public class ClientService {
 		
 		return  list.stream().map(x -> new ClientDTO(x)).collect(Collectors.toList());
 	}
+	
+//	FIND
 
 	@Transactional(readOnly = true)
 	public ClientDTO findById(Long id) {
@@ -33,6 +35,20 @@ public class ClientService {
 		Client entity =  obj.orElseThrow(() -> new EntityNotFoundException("Entity not found"));
 		return new ClientDTO(entity);
 	
+	}
+
+//	INSERT
+	
+	@Transactional
+	public ClientDTO insert(ClientDTO dto) {
+		Client entity = new Client();
+		entity.setName(dto.getName());
+		entity.setCpf(dto.getCpf());
+		entity.setIncome(dto.getIncome());
+		entity.setBirthDate(dto.getBirthDate());
+		entity.setChildren(dto.getChildren());
+		entity = repository.save(entity);
+		return new ClientDTO(entity);
 	}
 }
 
