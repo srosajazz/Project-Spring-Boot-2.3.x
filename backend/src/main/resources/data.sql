@@ -1,5 +1,10 @@
-INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Mick Smith, created_At', '11111111111', 4000.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 2, NOW());
-
-INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Joe Doe, created_At', '222222222222', 6000.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 2 , NOW());
-
-INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Nice Jones, created_At', '3333333333333', 14000.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 2,  NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Maria', '11111111111', 1000.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Maik', '22222222222', 3000.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 4);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Joe', '33333333333', 2500.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('James Smith', '44444444444', 4600.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Kyle herold', '55555555555', 3600.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 3);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Yuri jake', '66666666666', 1800.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Paul Smith', '77777777777', 2700.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Doug Jay', '88888888888', 1300.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Nancy Mary', '99999999999', 1300.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 3);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Ted frank', '12345678900', 2440.00, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 1);
