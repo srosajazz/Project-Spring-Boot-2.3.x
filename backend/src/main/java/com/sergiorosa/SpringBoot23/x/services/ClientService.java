@@ -78,7 +78,6 @@ public class ClientService {
 
 //	DELETE
 	
-	
 	public void delete(Long id) {
 		try {
 			repository.deleteById(id);
